@@ -14,6 +14,7 @@ class CategoryItem extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Text(
         title,
+        style: Theme.of(context).textTheme.headline6,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
