@@ -3,8 +3,11 @@ import 'package:navigation/widgets/main_drawer.dart';
 
 class FilterScreen extends StatefulWidget {
   static const id = 'filterScreen';
+
   final Function saveFilters;
+
   final Map<String, bool> currentFilter;
+
   FilterScreen(
     this.currentFilter,
     this.saveFilters,
@@ -77,7 +80,7 @@ class _FilterScreenState extends State<FilterScreen> {
               child: ListView(
             children: [
               _buildSwitchListTile(
-                'Gluten Free',
+                'Gluten-Free',
                 'Only include gluten free meals',
                 _glutenFree,
                 (newValue) {
@@ -87,7 +90,7 @@ class _FilterScreenState extends State<FilterScreen> {
                 },
               ),
               _buildSwitchListTile(
-                'Lactose Free',
+                'Lactose-Free',
                 'Only include lactose free meals',
                 _lactoseFree,
                 (newValue) {
