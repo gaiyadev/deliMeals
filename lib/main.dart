@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   bool _isMealFavorite(String id) {
-    return _favoriteMeals.any ((meal) => meal.id == id);
+    return _favoriteMeals.any((meal) => meal.id == id);
   }
 
   @override
@@ -89,7 +89,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (context) => TabsScreen(_favoriteMeals),
         CategoryMealScreen.id: (context) => CategoryMealScreen(_availableMeals),
-        MealDetailsScreen.id: (context) => MealDetailsScreen(_togglefavorite, _isMealFavorite),
+        MealDetailsScreen.id: (context) =>
+            MealDetailsScreen(_togglefavorite, _isMealFavorite),
         FilterScreen.id: (context) => FilterScreen(
               _filters,
               _setFilters,

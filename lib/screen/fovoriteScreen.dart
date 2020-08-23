@@ -9,7 +9,9 @@ class FavoriteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     if (favoriteMeals.isEmpty) {
       return Container(
-        child: Text('You have no favorites.. Start adding some'),
+        child: Center(
+          child: Text('You have no favorites.. Start adding some'),
+        ),
       );
     } else {
       return ListView.builder(
