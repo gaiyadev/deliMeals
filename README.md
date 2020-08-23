@@ -12,3 +12,4 @@ Is a food recipe app that allow users to learn how to cook by giving them the in
 + Stack
 + ListView
 + GridView
++ Silver widget
