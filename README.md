@@ -9,3 +9,6 @@ Is a food recipe app that allow users to learn how to cook by giving them the in
 + BottomNavigation
 + Dart Array method
 + and More
++ Stack
++ ListView
++ GridView
